@@ -1,0 +1,19 @@
+{
+  "count": 1,
+  "categories": [
+    {
+      "_id": "categories_1",
+      "name": "Flores",
+      "count": 1,
+      "account": [
+        {
+          "_id": "account_1",
+          "nombre": "Nombre del Local",
+          "descripcion": "Muy breve descripción de 250 carácteres",
+          "instagram": "@cuentaInstagram",
+          "whatsapp": "+507 6123-1234"
+        }
+      ]
+    }
+  ] 
+}
