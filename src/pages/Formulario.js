@@ -2,7 +2,7 @@ import React from "react"
 
 import { SEO } from "../components"
 
-const Home = () => (
+const Formulario = () => (
   <>
     <SEO 
       title=""
@@ -11,4 +11,4 @@ const Home = () => (
   </>
 )
 
-export default Home
+export default Formulario

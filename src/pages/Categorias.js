@@ -2,7 +2,7 @@ import React from "react"
 
 import { SEO } from "../components"
 
-const Home = () => (
+const Categorias = () => (
   <>
     <SEO 
       title=""
@@ -11,4 +11,4 @@ const Home = () => (
   </>
 )
 
-export default Home
+export default Categorias
