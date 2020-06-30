@@ -1,14 +1,16 @@
 import React from "react"
 
 import { SEO } from "../components"
+import { Forms } from '../containers'
 
-const Home = () => (
+const Form = () => (
   <>
     <SEO 
       title=""
       description=""
     />
+    <Forms />
   </>
 )
 
-export default Home
+export default Form

@@ -1,14 +1,16 @@
 import React from "react"
 
 import { SEO } from "../components"
+import { Categories } from '../containers'
 
-const Categories = () => (
+const Category = () => (
   <>
     <SEO 
       title=""
       description=""
     />
+    <Categories />
   </>
 )
 
-export default Categories
+export default Category
