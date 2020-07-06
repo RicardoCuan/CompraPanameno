@@ -10,7 +10,8 @@
           "_id": "account_1",
           "nombre": "Nombre del Local",
           "descripcion": "Muy breve descripción de 250 carácteres",
-          "instagram": "@cuentaInstagram",
+          "instagram": "cuentaInstagram",
+          "facebook": "cuentaInstagram",
           "whatsapp": "+507 6123-1234"
         }
       ]

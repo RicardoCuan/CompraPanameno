@@ -1,15 +1,15 @@
 import React from "react"
 
 import { SEO } from "../components"
+import { Homes } from "../containers"
 
 const Home = () => (
   <>
     <SEO 
-      title=""
+      title="Bienvenido | ComprandoPanameño"
       description=""
     />
-    <h1>Comprando Panameño</h1>
-    <p>Insentivamos </p>
+    <Homes />
   </>
 )
 
