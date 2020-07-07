@@ -6,7 +6,7 @@ import { Homes } from "../containers"
 const Home = () => (
   <>
     <SEO 
-      title="Bienvenido | ComprandoPanameño"
+      title="Bienvenido | Compra Panameño 🇵🇦"
       description=""
     />
     <Homes />

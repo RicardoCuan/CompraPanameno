@@ -30,6 +30,7 @@ const Forms = () => {
           <InputBox title="titulo" placeholder="placeholder" type="text" />
           <InputBox title="titulo" placeholder="placeholder" type="text" />
           <InputBox title="titulo" placeholder="placeholder" type="text" />
+          <button>¡Registrar!</button>
         </form>
       </div>
     </>

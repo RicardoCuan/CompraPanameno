@@ -1,21 +1,28 @@
 import React from 'react'
-import { Link } from 'gatsby'
+
+import { HeaderStyle,Link,Wrap,TitleContainer,Title,List,ListItem,Nav } from './style'
 
 const Header = () => {
   return (
-    <header>
-      <h1>Comprando Panameño</h1>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Catálogos</Link>
-          </li>
-          <li>
-            <Link to="agregar">Añadir emprendimiento</Link>
-          </li>
-        </ul>
-      </nav>
-    </header> 
+    <HeaderStyle>
+      <Wrap>
+        <TitleContainer>
+          <Title>
+            <Link to="/">Compra Panameño</Link>
+          </Title>
+          </TitleContainer>
+        <Nav>
+          <List>
+            <ListItem>
+              <Link to="/">Catálogos</Link>
+            </ListItem>
+            <ListItem>
+              <Link to="/Form">Añadir emprendimiento</Link>
+            </ListItem>
+          </List>
+        </Nav>
+      </Wrap>
+    </HeaderStyle> 
   )
 }
 

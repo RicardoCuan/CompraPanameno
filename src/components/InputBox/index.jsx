@@ -1,7 +1,5 @@
 import React from 'react'
 
-import { Card } from '../../components'
-
 const InputBox = ({ title, placeholder, type }) => {
   return (
     <div>

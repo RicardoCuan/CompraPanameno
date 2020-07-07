@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `ComprandoPanameño 🇵🇦`,
+    title: `Compra Panameño 🇵🇦`,
     description: `En momentos difíciles tenemos `,
     author: `@RicardoCuan`,
   },
