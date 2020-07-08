@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { ListOfCards,HeroCat } from '../../components'
 import { 
   TextContainer,
   Title,
@@ -12,14 +11,14 @@ const cover = "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixli
 const title = "Titulo de la categoria"
 const description = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas ratione eaque debitis veritatis voluptatem aliquid, cum provident, nostrum fuga non veniam officia qui dolore. Non aperiam quae animi nam deleniti!"
 
-const Categories = ({ pageContext }) => {
-  return (
-    <main>
-      <HeroCat />
-      <ListOfCards />
-    </main>
-  )
-}
+const HeroCat = ({ pageContext }) => (
+  <Hero>
+    <TextContainer>
+      <Title>{title}</Title>
+      <Desc>{description}</Desc>
+    </TextContainer>
+  </Hero>
+)
 
 const Hero = styled.div`
   display: flex;
@@ -30,4 +29,4 @@ const Hero = styled.div`
   background-size: cover;
 `
 
-export default Categories
+export default HeroCat
