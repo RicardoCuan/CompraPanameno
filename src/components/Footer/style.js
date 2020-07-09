@@ -47,8 +47,12 @@ export const Social = styled.section`
   ul {
     margin-top: 30px;
     margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     list-style-type: none;
     display: flex;
+    justify-content: center;
+    flex-flow: wrap;
   }
   li {
     text-align: center;
@@ -59,5 +63,8 @@ export const Social = styled.section`
     &:hover {
       border: none;
     }
+  }
+  li > a > p {
+    min-width: 100px;
   }
 `

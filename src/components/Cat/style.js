@@ -13,8 +13,10 @@ export const ImgContainer = styled.div`
   `
 
 export const Img = styled.img`
-  width: 200px;
+  max-width: 200px;
   border-radius: 20px;
+  padding-left: 6px;
+  padding-right: 6px;
 `
 
 export const Paragraph = styled.p`

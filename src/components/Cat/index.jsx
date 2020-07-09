@@ -15,7 +15,7 @@ const Cat = ({
   
   return (
     <Wrap>
-      <Link to='/'>
+      <Link to='/Category'>
         <ImgContainer>
           <Img src={cover} alt={text} />
         </ImgContainer>

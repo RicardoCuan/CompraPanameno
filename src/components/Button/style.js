@@ -13,5 +13,7 @@ export const ButtonStyled = styled(LinkRoute)`
   &:hover {
     background-color: white;
     color: #011E56;
+    border-bottom: 1px solid #011E56;
+    transform: scale(0.95);
   }
 `

@@ -1,16 +1,21 @@
 import styled from 'styled-components'
+import { device } from '../../style'
 
 export const Wrap = styled.div`
-  display: flex;
-  width: 835px;
+  grid-area: Card;
+  display: block;
+  width: auto;
+  
+  /* height: 90px; */
 `
 
 export const Container = styled.div`
   display: flex;
   border: 1px solid gray;
-  border-right: none;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+  
+  /* border-right: none; */
 `
 
 export const ImgContainer = styled.div`
@@ -22,7 +27,7 @@ export const Img = styled.img`
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  padding-left: 10px;
+  margin-left: 10px;
 `
 
 export const TextContainer = styled.div`
@@ -36,12 +41,12 @@ export const Title = styled.h3`
 `
 
 export const Province = styled.small`
-  display: inline;
+  display: block;
   padding-left: 10px;
 `
 
 export const Desc = styled.p`
-  width: 400px;
+  width: 300px;
 `
 
 export const SocialContainer = styled.div`

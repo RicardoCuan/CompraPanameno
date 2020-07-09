@@ -26,7 +26,7 @@ const Footer = () => {
             <li>
               <a href="mailto:ricardocuan@aiesec.net" target="_blank" rel="noreferrer">
                 <AiOutlineMail size="3em" />
-                <p>Correo</p>
+                <p>    Correo    </p>
               </a>
             </li>
             <li>

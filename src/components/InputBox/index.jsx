@@ -1,5 +1,7 @@
 import React from 'react'
 
+import {Container,Label,Input} from './style'
+
 const InputBox = ({ title, placeholder, type }) => {
   return (
     <div>
