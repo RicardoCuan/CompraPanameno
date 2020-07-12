@@ -8,7 +8,7 @@ const Hero = ({ data }) => {
       <div>
         <h1>Compra</h1>
         <h1>Panameño</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus sequi facere, neque fuga consequuntur architecto ut itaque dicta? Asperiores.</p>
+        <p>¡Descubre emprendimientos panameños: Accesorios, artesanías, servicios y más!</p>
       </div>
     </HeroStyled>
   )

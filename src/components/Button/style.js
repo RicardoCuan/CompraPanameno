@@ -10,6 +10,7 @@ export const ButtonStyled = styled(LinkRoute)`
   text-decoration: none;
   background-color: #012770;
   color: white;
+  
   &:hover {
     background-color: white;
     color: #011E56;

@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { device } from '../../style'
 
 export const Wrap = styled.div`
   display: flex;
@@ -10,9 +11,17 @@ export const Wrap = styled.div`
 export const List = styled.ul`
   list-style-type: none;
   display: grid;
-  grid-gap: 15px;
   grid-template-columns: repeat(2, 1fr);
-  /* grid-template-columns: repeat(5, 1fr); */
+  /* grid-gap: 5px; */
+
+  @media ${device.mobileL} {
+    grid-gap: 15px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media ${device.laptop} {
+    grid-template-columns: repeat(5, 1fr);
+  }
 `
 
 export const ListItem = styled.li`

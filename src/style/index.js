@@ -26,10 +26,10 @@ export const color = {
 
 /** Tamaños de Pantallas */
 export const size = {
-  mobileS: '320px',
-  mobileM: '375px',
-  mobileL: '425px',
-  tablet: '768px',
+  mobileS: '325px',
+  mobileM: '380px',
+  mobileL: '430px',
+  tablet: '770px',
   laptop: '1024px',
   laptopL: '1440px',
   desktop: '1880px',
@@ -55,5 +55,3 @@ export const device = {
   /** desktop: 2560px - Mobile First*/
   desktopL: `(min-width: ${size.desktopL})`
 }
-
-export const maxWidth = '1000px'

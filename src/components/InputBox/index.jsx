@@ -4,10 +4,10 @@ import {Container,Label,Input} from './style'
 
 const InputBox = ({ title, placeholder, type }) => {
   return (
-    <div>
-      <p>{title}</p>
-      <input type={type} name="name" placeholder={placeholder} />
-    </div>
+    <Container>
+      <Label>{title}</Label>
+      <Input type={type} name="name" placeholder={placeholder} />
+    </Container>
   )
 }
 

@@ -1,17 +1,31 @@
 import React from 'react'
 
-import { HeaderStyle,Link,Wrap,TitleContainer,Title,List,ListItem,Nav } from './style'
+import {
+  HeaderStyle,
+  BurgerButton,
+  Link,
+  Wrap,
+  TitleContainer,
+  Title,
+  List,
+  ListItem,
+  Nav
+} from './style'
+import { GiHamburgerMenu } from "react-icons/gi"
 
 const Header = () => {
   return (
     <HeaderStyle>
+      <BurgerButton>
+        <GiHamburgerMenu size="16px"/>
+      </BurgerButton>
       <Wrap>
         <TitleContainer>
           <Title>
             <Link to="/">Compra Panameño</Link>
           </Title>
           </TitleContainer>
-        <Nav>
+        <Nav id="menu">
           <List>
             <ListItem>
               <Link to="/">Catálogos</Link>

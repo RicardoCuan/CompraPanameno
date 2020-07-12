@@ -13,7 +13,7 @@ export const ImgContainer = styled.div`
   `
 
 export const Img = styled.img`
-  max-width: 200px;
+  max-width: 120px;
   border-radius: 20px;
   padding-left: 6px;
   padding-right: 6px;

@@ -4,11 +4,7 @@ import { device } from '../../style'
 export const Wrap = styled.div`
   grid-area: Card;
   display: block;
-  
-  @media ${device.mobileL} {
-    display: flex;
-    /* height: 90px; */
-  }
+  width: auto;
 `
 
 export const Container = styled.div`
@@ -16,11 +12,6 @@ export const Container = styled.div`
   border: 1px solid gray;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  
-  @media ${device.mobileL} {
-    border-top-right-radius: 0;
-    border-bottom-left-radius: 10px;
-  }
 `
 
 export const ImgContainer = styled.div`
@@ -58,9 +49,6 @@ export const Desc = styled.p`
   @media ${device.mobileM} {
     width: 300px;
   }
-  @media ${device.tablet} {
-    width: 400px;
-  }
 `
 
 
@@ -72,12 +60,6 @@ export const SocialContainer = styled.div`
   align-items: center;
   justify-content: center;
   padding: 10px 0;
-
-  @media ${device.mobileL} {
-    padding: 0 5px;
-    border-bottom-left-radius: 0;
-    border-top-right-radius: 10px;
-  }
 `
 
 export const List = styled.ul`

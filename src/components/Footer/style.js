@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { device } from '../../style'
 
 export const FooterStyled = styled.footer`
   a {
@@ -21,9 +22,18 @@ export const Call = styled.section`
   color: white;
   height: 200px;
 
+  h2 {
+    font-size: 20px;
+  }
   h1 {
-    font-size: 30px;
+    font-size: 24px;
     margin-bottom: 20px;
+    @media ${device.mobileS} { 
+      font-size: 28px;
+    }
+    @media ${device.mobileM} { 
+      font-size: 30px;
+    }
   }
 
 `
@@ -46,13 +56,18 @@ export const Social = styled.section`
   }
   ul {
     margin-top: 30px;
-    margin-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
     list-style-type: none;
     display: flex;
     justify-content: center;
     flex-flow: wrap;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    @media ${device.mobileS} {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
   }
   li {
     text-align: center;

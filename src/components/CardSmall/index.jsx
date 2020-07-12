@@ -23,7 +23,7 @@ import {
   AiOutlineGlobal
 } from 'react-icons/ai'
 
-const Card = ({ 
+const CardSmall = ({ 
   img = "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=752&q=80",
   title = "Título del emprendimiento",
   province = "Provincia",
@@ -80,4 +80,4 @@ const Card = ({
   )
 }
 
-export default Card
+export default CardSmall
