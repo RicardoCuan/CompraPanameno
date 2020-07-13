@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { Link as LinkRoute } from 'gatsby'
+import { device } from '../../style'
 
 export const Wrap = styled.div`
   padding-bottom: 15px;
@@ -17,6 +18,15 @@ export const Img = styled.img`
   border-radius: 20px;
   padding-left: 6px;
   padding-right: 6px;
+  @media ${device.mobileS} {
+    max-width: 140px;
+  }
+  @media ${device.mobileM} {
+    max-width: 160px;
+  }
+  @media ${device.mobileM} {
+    max-width: 180px;
+  }
 `
 
 export const Paragraph = styled.p`

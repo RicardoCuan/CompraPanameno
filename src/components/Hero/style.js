@@ -27,7 +27,7 @@ export const HeroStyled = styled.section`
   h1 {
     margin-left: 10px;
     line-height: 1;
-    font-size: 36px;
+    font-size: 32px;
 
     
     @media ${device.mobileM} {
@@ -35,19 +35,30 @@ export const HeroStyled = styled.section`
     }
     @media ${device.mobileL} {
       /* font-size: 44px; */
-      margin-left: 20px;
+      margin-left: 30px;
+    }
+    @media ${device.tablet} {
+      display: inline-block;
+      font-size: 50px;
+      margin-left: 100px;
+      width: 600px;
     }
   }
   
   p {
     margin-top: 10px;
-    width: 200px;
+    width: 170px;
     margin-left: 10px;
     padding-bottom: 10px;
     
     @media ${device.mobileL} {
       width: 300px;
-      margin-left: 20px;
+      margin-left: 30px;
+    }
+    @media ${device.tablet} {
+      margin-left: 100px;
+      font-size: 20px;
+      width: 400px;
     }
   }
 `

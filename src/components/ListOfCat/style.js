@@ -16,7 +16,7 @@ export const List = styled.ul`
 
   @media ${device.mobileL} {
     grid-gap: 15px;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   @media ${device.laptop} {

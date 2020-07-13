@@ -14,6 +14,10 @@ export const Title = styled.h1`
   padding-bottom: 10px;
 
   @media ${device.mobileM} {
+    font-size: 36px;
+  }
+  
+  @media ${device.mobileM} {
     font-size: 40px;
   }
 `

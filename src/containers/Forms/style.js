@@ -9,6 +9,7 @@ export const CardContauner = styled.div`
   padding-bottom: 30px;
   grid-area: CardContainer;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 `
@@ -16,12 +17,15 @@ export const CardContauner = styled.div`
 export const Container = styled.section`
   display: grid;
   grid-template-rows: auto auto;
+  grid-template-columns: 1fr;
   grid-template-areas: 'Form' 'CardContainer';
   justify-content: center;
   align-items: center;
 
   @media ${device.tablet} {
     grid-template-areas: 'CardContainer Form';
+    grid-template-rows: 1fr;
+    grid-template-columns: auto auto;
     grid-column-gap: 40px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -40,6 +44,7 @@ export const Form = styled.form`
   @media ${device.tablet} {
     display: grid;
     grid-column-gap: 8px;
+    justify-content: center;
     grid-template-areas: 
       'ShopName Province' 
       'Description Description'
@@ -90,6 +95,9 @@ export const Input = styled.input`
   font-size: 18px;
   width: 250px;
   outline: none;
+  @media ${device.mobileM} {
+    width: 300px;
+  }
   @media ${device.mobileL} {
     width: 400px;
   }
@@ -106,6 +114,9 @@ export const Select = styled.select`
   border-radius: 5px;
   padding: 10px 10px;
   font-size: 18px;
+  @media ${device.mobileM} {
+    width: 320px;
+  }
   @media ${device.mobileL} {
     width: 422px;
   }
@@ -126,6 +137,9 @@ export const TextArea = styled.textarea`
   resize: none;
   overflow: auto;
   font-family: -apple-system, System-ui , BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  @media ${device.mobileM} {
+    width: 300px;
+  }
   @media ${device.mobileL} {
     width: 400px;
   }
@@ -150,8 +164,12 @@ export const Button = styled.button`
   border-bottom: 4px solid #006266;
   border-radius: 20px;
   outline: none;
-
+  
+  @media ${device.mobileS} { 
+    width: calc(100% - 20px);
+  }
   @media ${device.mobileL} { 
-    width: 100%;
+    justify-content: center;
+    width: 422px;
   }
 `

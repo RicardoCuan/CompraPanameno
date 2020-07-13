@@ -58,13 +58,15 @@ export const SocialContainer = styled.div`
   background-color: #011E56;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   padding: 10px 0;
 `
 
 export const List = styled.ul`
   display: flex;
+  width: 100%;
   align-items: center;
+  justify-content: space-around;
   list-style-type: none;
 `
 
@@ -93,5 +95,8 @@ export const Anchor = styled.a`
 `
 
 export const SocialText = styled.small`
-  display: block;
+  display: none;
+  @media ${device.mobileM} {
+    display: block;
+  }
 `

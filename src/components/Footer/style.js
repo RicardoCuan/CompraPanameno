@@ -71,7 +71,10 @@ export const Social = styled.section`
   }
   li {
     text-align: center;
-    margin: 0 20px;
+    margin: 0 10px;
+    @media ${device.mobileS} {
+      margin: 0 20px;
+    }
   }
   ul > li > a {
     border: none;
