@@ -1,8 +1,8 @@
 {
-  "count": 1,
+  "count": 2,
   "categories": [
     {
-      "_id": "categories_1",
+      "_id": "flores",
       "name": "Flores",
       "count": 1,
       "account": [
@@ -15,6 +15,21 @@
           "whatsapp": "+507 6123-1234"
         }
       ]
+    },
+    {
+      "_id": "arreglos",
+      "name": "Arreglos",
+      "count": 1,
+      "account": [
+        {
+          "_id": "account_2",
+          "nombre": "Nombre del Local 2",
+          "descripcion": "Muy breve descripción de 250 carácteres",
+          "instagram": "cuentaInstagram",
+          "facebook": "cuentaInstagram",
+          "whatsapp": "+507 6123-1234"
+        }
+      ]
     }
-  ] 
+  ]
 }

@@ -6,7 +6,7 @@ import { Forms } from '../containers'
 const Form = () => (
   <>
     <SEO 
-      title=""
+      title="Registro | Compra Panameño 🇵🇦"
       description=""
     />
     <Forms />

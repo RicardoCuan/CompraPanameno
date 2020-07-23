@@ -26,19 +26,21 @@ class Forms extends React.Component {
   state = {
     form: {
       img: "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=752&q=80",
-      title: "Título del emprendimiento",
-      province: "Provincia",
-      desc: "Muy breve descripción del negocio, esta debe de ser muy  corta.",
+      title: "Sombrero Pintao PTY",
+      province: "Panamá",
+      desc: "Vendemos Sombreros Pintados en la provincia de Veraguas.",
       whatsapp: "61234567",
-      instagram: "cuentaInsta",
-      facebook: "cuentaFB",
-      website: "ricardocuan.com"
+      instagram: "SombreroPintao",
+      facebook: "SombreroPintao",
+      website: "sombreropintao.com"
     },
   };
 
   handleChange = e => {
+    console.log(e.target.name,": ",e.target.value)
     this.setState({
       form: {
+        ...this.state.form,
         [e.target.name]: e.target.value
       }
     })
@@ -82,23 +84,24 @@ class Forms extends React.Component {
             <Province>
               <SubTitle>Provincia Sede</SubTitle>
               <Select 
-                name="provincias" 
+                name="province" 
                 placeholder="provincia"
                 onChange={this.handleChange}
+                value={this.state.province}
               >
-                <option value="Panama">Panamá</option>
-                <option value="PanamaOeste">Panamá Oeste</option>
-                <option value="Colon">Colón</option>
-                <option value="Cocle">Coclé</option>
-                <option value="Chiriqui">Chiriquí</option>
+                <option value="Panamá">Panamá</option>
+                <option value="Panamá Oeste">Panamá Oeste</option>
+                <option value="Colón">Colón</option>
+                <option value="Coclé">Coclé</option>
+                <option value="Chiriquí">Chiriquí</option>
                 <option value="Herrera">Herrera</option>
-                <option value="LosSantos">Los Santos</option>
+                <option value="Los Santos">Los Santos</option>
                 <option value="Veraguas">Veraguas</option>
-                <option value="BocasDelToro">Bocas del Toro</option>
-                <option value="Darien">Darién</option>
-                <option value="NgabeBugle">Ngäbe-Buglé</option>
-                <option value="GunaYala">Guna Yala</option>
-                <option value="EmberaWounaan">Emberá-Wounaan</option>
+                <option value="Bocas del Toro">Bocas del Toro</option>
+                <option value="Darién">Darién</option>
+                <option value="Ngäbe-Buglé">Ngäbe-Buglé</option>
+                <option value="Guna Yala">Guna Yala</option>
+                <option value="Emberá-Wounaan">Emberá-Wounaan</option>
               </Select>
             </Province>
             

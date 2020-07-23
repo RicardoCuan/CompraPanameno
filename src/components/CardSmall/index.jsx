@@ -26,7 +26,7 @@ import {
 const CardSmall = ({ 
   img = "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=752&q=80",
   title = "Sombrero Pintao PTY",
-  province = "Panamá",
+  province = "Panama",
   desc = "Vendemos Sombreros Pintados en la provincia de Veraguas",
   whatsapp = "61234567",
   instagram = "SombreroPintao",

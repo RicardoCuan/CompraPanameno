@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
 import {
   HeaderStyle,
@@ -14,12 +14,26 @@ import {
 import { GiHamburgerMenu } from "react-icons/gi"
 
 const Header = () => {
+  
+  const [open, setOpen] = useState(false)
+  
+  const handleClick = e => {
+    setOpen(!open)
+    console.log(open)
+  }
+
+  const handleClickItem = e => {
+    if (open === true) {
+      setOpen(false)
+    }
+  }
+
   return (
     <HeaderStyle>
-      <BurgerButton>
+      <BurgerButton onClick={ handleClick }>
         <GiHamburgerMenu size="16px"/>
       </BurgerButton>
-      <Wrap>
+      <Wrap open={open}>
         <TitleContainer>
           <Title>
             <Link to="/">Compra Panameño</Link>
@@ -27,10 +41,10 @@ const Header = () => {
           </TitleContainer>
         <Nav id="menu">
           <List>
-            <ListItem>
+            <ListItem onClick={ handleClickItem }>
               <Link to="/">Catálogos</Link>
             </ListItem>
-            <ListItem>
+            <ListItem onClick={ handleClickItem }>
               <Link to="/Form">Añadir emprendimiento</Link>
             </ListItem>
           </List>

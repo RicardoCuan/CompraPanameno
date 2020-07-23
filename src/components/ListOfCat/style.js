@@ -11,16 +11,17 @@ export const Wrap = styled.div`
 export const List = styled.ul`
   list-style-type: none;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat( auto-fit, minmax(auto, 1fr) );
+  /* grid-template-columns: repeat(2, 1fr); */
   /* grid-gap: 5px; */
 
   @media ${device.mobileL} {
     grid-gap: 15px;
-    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(3, 1fr); */
   }
 
   @media ${device.laptop} {
-    grid-template-columns: repeat(5, 1fr);
+    /* grid-template-columns: repeat(5, 1fr); */
   }
 `
 

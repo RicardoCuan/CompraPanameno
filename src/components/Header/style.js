@@ -41,7 +41,7 @@ export const Toggle = ({active}) => ({
 }[active])
 
 export const Wrap = styled.div`
-  right: 200vw;
+  right: ${({ open }) => open ? '0' : '-200vw'};
   position: fixed;
   top: 0;
   width: 70%;
@@ -50,8 +50,9 @@ export const Wrap = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: left;
-  height: 100%;
+  height: 50%;
   background: #0239A3;
+  transition: all 0.3s linear;
 
   @media ${device.mobileL} {
     display: flex;
@@ -72,7 +73,7 @@ export const TitleContainer = styled.div`
 export const Title = styled.h1`
   padding-top: 20px;
   padding-bottom: 10px;
-  /* font-size: 30px; */
+  font-size: 20px;
   text-align: center;
 
   @media ${device.mobileL} {
@@ -106,11 +107,13 @@ export const ListItem = styled.li`
   border-bottom: 1px solid #DB0A13;
   margin: 0 20px;
   font-size: 16px;
+  margin-top: 20px;
   &:hover { 
     border-bottom: 3px solid #DB0A13;
   }
 
   @media ${device.mobileL} {
+    margin-top: 0px;
     border-bottom: none;
   }
 `
