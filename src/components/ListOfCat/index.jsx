@@ -12,10 +12,10 @@ const ListOfCat = () => {
 
   const data = useStaticQuery( graphql`
     query ListOfCat {
-      allDataJson {
+      allDataJson(sort: {fields: id, order: ASC}) {
         edges {
-          node{
-            categories{
+          node {
+            categories {
               _id
               name
             }

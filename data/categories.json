@@ -1,0 +1,51 @@
+{
+  "count": 2,
+  "categories": [
+    {
+      "_id": "flores",
+      "name": "Flores",
+      "description": "Lorem ipsum asdasd asd asd asd as das das das as das as dsa as das asd as das asdasdasdasdasdasdasdasdas d as dasd asd asd asd asd as das dasd as das ",
+      "count": 2,
+      "account": [
+        {
+          "_id": "account_1",
+          "name": "name del Local",
+          "img": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=752&q=80",
+          "description": "Muy breve descripción de 250 carácteres",
+          "instagram": "cuentaInstagram",
+          "facebook": "cuentaInstagram",
+          "whatsapp": "6123-1234",
+          "website": "ricardocuan.com"
+        },
+        {
+          "_id": "account_2",
+          "name": "name del Local",
+          "img": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=752&q=80",
+          "description": "Muy breve descripción de 250 carácteres",
+          "instagram": "cuentaInstagram",
+          "facebook": "cuentaInstagram",
+          "whatsapp": "6123-1234",
+          "website": "ricardocuan.com"
+        }
+      ]
+    },
+    {
+      "_id": "arreglos",
+      "name": "Arreglos",
+      "description": "Lorem ipsum asdasd asd asd asd as das das das as das as dsa as das asd as das asdasdasdasdasdasdasdasdas d as dasd asd asd asd asd as das dasd as das ",
+      "count": 1,
+      "account": [
+        {
+          "_id": "account_3",
+          "name": "name del Local 2",
+          "img": "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=752&q=80",
+          "description": "Muy breve descripción de 250 carácteres",
+          "instagram": "cuentaInstagram",
+          "facebook": "cuentaInstagram",
+          "whatsapp": "6123-1234",
+          "website": "ricardocuan.com"
+        }
+      ]
+    }
+  ]
+}
