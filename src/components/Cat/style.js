@@ -22,10 +22,10 @@ export const Img = styled.img`
     max-width: 140px;
   }
   @media ${device.mobileM} {
-    max-width: 160px;
+    max-width: 140px;
   }
   @media ${device.mobileM} {
-    max-width: 180px;
+    max-width: 160px;
   }
 `
 

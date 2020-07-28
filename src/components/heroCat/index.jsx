@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { device } from '../../style'
 
 import { 
   TextContainer,
@@ -28,6 +29,9 @@ const Hero = styled.div`
   background-repeat: no-repeat;
   background-origin: center;
   background-size: cover;
+  @media ${device.mobileM} {
+    margin-bottom: 20px;
+  }
 `
 
 export default HeroCat

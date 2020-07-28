@@ -1,6 +1,7 @@
 import React from 'react'
 
-import { ListOfCards,HeroCat } from '../../components'
+import { ListOfCards,HeroCat,Button } from '../../components'
+import { Registro } from './style'
 
 const Categories = ({id, name, description}) => {
   return (
@@ -10,6 +11,11 @@ const Categories = ({id, name, description}) => {
         description = {description}
       />
       <ListOfCards id = {id} />
+      <Registro>
+        <h2>¿Conoces algun emprendimiento?</h2>
+        <p></p>
+        <Button to="/Form">Registra un emprendimiento</Button>
+      </Registro>
     </main>
   )
 }

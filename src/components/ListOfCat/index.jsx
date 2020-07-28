@@ -26,7 +26,7 @@ const ListOfCat = () => {
   `)
 
   const cats = data.allDataJson.edges[0].node.categories
-
+  console.log({cats})
   return (
     <Wrap>
       <List>

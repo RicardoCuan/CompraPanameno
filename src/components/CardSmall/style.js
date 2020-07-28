@@ -59,7 +59,7 @@ export const SocialContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding: 10px 0;
+  padding: 10px 5px;
 `
 
 export const List = styled.ul`

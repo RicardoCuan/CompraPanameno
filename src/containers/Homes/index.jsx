@@ -16,7 +16,7 @@ const Homes = () => {
         <Registro>
           <h2>¿Conoces algún emprendimiento panameño?</h2>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, accusamus voluptatum! Numquam, debitis labore incidunt quis laboriosam laudantium dolorum harum. Distinctio corrupti, provident impedit porro consequatur assumenda ducimus ullam rem!</p>
-          <Button to="/Form">Regístra un emprendimiento</Button>
+          <Button to="/Form">Registra un emprendimiento</Button>
         </Registro>
       </DescriptionSection>
       <ListOfCat />

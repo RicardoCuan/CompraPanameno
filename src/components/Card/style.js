@@ -5,7 +5,7 @@ export const Wrap = styled.div`
   grid-area: Card;
   display: block;
   
-  @media ${device.mobileL} {
+  @media ${device.tablet} {
     display: flex;
     /* height: 90px; */
   }
@@ -17,7 +17,7 @@ export const Container = styled.div`
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   
-  @media ${device.mobileL} {
+  @media ${device.tablet} {
     border-top-right-radius: 0;
     border-bottom-left-radius: 10px;
   }
@@ -59,7 +59,8 @@ export const Desc = styled.p`
     width: 300px;
   }
   @media ${device.tablet} {
-    width: 400px;
+    min-width: 400px;
+    max-width: 500px;
   }
 `
 
@@ -71,9 +72,9 @@ export const SocialContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 0;
+  padding: 10px 5px;
 
-  @media ${device.mobileL} {
+  @media ${device.tablet} {
     padding: 0 5px;
     border-bottom-left-radius: 0;
     border-top-right-radius: 10px;
@@ -82,7 +83,9 @@ export const SocialContainer = styled.div`
 
 export const List = styled.ul`
   display: flex;
+  width: 100%;
   align-items: center;
+  justify-content: space-around;
   list-style-type: none;
 `
 
@@ -111,5 +114,8 @@ export const Anchor = styled.a`
 `
 
 export const SocialText = styled.small`
-  display: block;
+  display: none;
+  @media ${device.mobileL} {
+    display: block;
+  }
 `
