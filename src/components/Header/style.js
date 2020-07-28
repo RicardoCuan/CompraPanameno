@@ -44,13 +44,13 @@ export const Wrap = styled.div`
   right: ${({ open }) => open ? '0' : '-200vw'};
   position: fixed;
   top: 0;
-  width: 70%;
+  width: 90%;
   display: flex;
   padding: 30px 0;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   justify-content: left;
-  height: 50%;
+  height: 100%;
   background: #0239A3;
   transition: all 0.3s linear;
 
@@ -68,15 +68,23 @@ export const Wrap = styled.div`
 `
 
 export const TitleContainer = styled.div`
+  width: 100%;
+  @media ${device.mobileL} {
+    width: auto;
+  }
 `
 
 export const Title = styled.h1`
   padding-top: 20px;
   padding-bottom: 10px;
-  font-size: 20px;
   text-align: center;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   @media ${device.mobileL} {
+    display: block;
     padding-bottom: 0px;
     padding-top: 0;
     font-size: 20px;
@@ -94,10 +102,11 @@ export const Nav = styled.nav`
 export const List = styled.ul`
   list-style-type: none;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: flex-end;
+  justify-content: center;
   flex-direction: column;
-
+  margin-top: 40px;
+  margin-right: 30px;
   @media ${device.mobileL} {
     flex-direction: row;
   }
@@ -105,9 +114,8 @@ export const List = styled.ul`
 
 export const ListItem = styled.li`
   border-bottom: 1px solid #DB0A13;
-  margin: 0 20px;
-  font-size: 16px;
-  margin-top: 20px;
+  font-size: 1.3rem;
+  margin-bottom: 30px;
   &:hover { 
     border-bottom: 3px solid #DB0A13;
   }

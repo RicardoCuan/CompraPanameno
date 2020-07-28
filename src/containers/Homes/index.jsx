@@ -19,7 +19,7 @@ const Homes = () => {
           <Button to="/Form">Registra un emprendimiento</Button>
         </Registro>
       </DescriptionSection>
-      <ListOfCat />
+      <ListOfCat id="c"/>
     </>
   )
 }

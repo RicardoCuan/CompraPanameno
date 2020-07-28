@@ -29,7 +29,6 @@ const ListOfCards = ({id}) => {
   const cats = data.dataJson.categories.filter(function(cat){
     return cat._id === id
   })
-  console.log(cats)
 
   return (
     <main>

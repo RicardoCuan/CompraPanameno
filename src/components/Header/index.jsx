@@ -19,7 +19,6 @@ const Header = () => {
   
   const handleClick = e => {
     setOpen(!open)
-    console.log(open)
   }
 
   const handleClickItem = e => {
@@ -35,14 +34,14 @@ const Header = () => {
       </BurgerButton>
       <Wrap open={open}>
         <TitleContainer>
-          <Title>
+          <Title onClick={ handleClickItem }>
             <Link to="/">Compra Panameño</Link>
           </Title>
           </TitleContainer>
         <Nav id="menu">
           <List>
             <ListItem onClick={ handleClickItem }>
-              <Link to="/">Catálogos</Link>
+              <Link to="/#c">Catálogos</Link>
             </ListItem>
             <ListItem onClick={ handleClickItem }>
               <Link to="/Form">Añadir emprendimiento</Link>
