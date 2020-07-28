@@ -84,6 +84,7 @@ export const Title = styled.h1`
   align-items: center;
 
   @media ${device.mobileL} {
+    font-size: 20px;
     display: block;
     padding-bottom: 0px;
     padding-top: 0;
@@ -121,6 +122,8 @@ export const ListItem = styled.li`
   }
 
   @media ${device.mobileL} {
+    margin-left: 30px;
+    font-size: 16px;
     margin-top: 0px;
     border-bottom: none;
   }
