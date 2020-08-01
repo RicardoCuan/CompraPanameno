@@ -21,20 +21,29 @@ import {
   Web
 } from './style'
 
+const encode = (data) => {
+  return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+}
+
 class Forms extends React.Component {
 
-  state = {
-    form: {
-      img: "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=752&q=80",
-      title: "Sombrero Pintao PTY",
-      province: "Panamá",
-      desc: "Vendemos Sombreros Pintados en la provincia de Veraguas.",
-      whatsapp: "61234567",
-      instagram: "SombreroPintao",
-      facebook: "SombreroPintao",
-      website: "sombreropintao.com"
-    },
-  };
+  constructor(props) {
+    super(props)
+    this.state = {
+      form: {
+        img: "https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=752&q=80",
+        title: "",
+        province: "Panamá",
+        desc: "",
+        whatsapp: "",
+        instagram: "",
+        facebook: "",
+        website: ""
+      }
+    }
+  }
 
   handleChange = e => {
     this.setState({
@@ -43,6 +52,18 @@ class Forms extends React.Component {
         [e.target.name]: e.target.value
       }
     })
+  }
+
+  handleSubmit = e => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-register": "contact", ...this.state.form })
+    })
+      .then(() => alert("Success!"))
+      .catch(error => alert(error));
+
+    e.preventDefault();
   }
 
   render() {
@@ -68,7 +89,14 @@ class Forms extends React.Component {
               website = {this.state.form.website}
             />
           </CardContauner>
-          <Form>
+          <Form 
+            onSubmit={this.handleSubmit}
+            name="register"
+            method="post"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+          >
+            <input type="hidden" name="form-register" value="register" />
             <Name>
               <SubTitle>Nombre del Emprendimiento</SubTitle>
               <Input 

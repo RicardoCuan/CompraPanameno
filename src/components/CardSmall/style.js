@@ -15,6 +15,7 @@ export const Container = styled.div`
 `
 
 export const ImgContainer = styled.div`
+  padding: 3px 0px;
   display: flex;
   align-items: center;
 `
