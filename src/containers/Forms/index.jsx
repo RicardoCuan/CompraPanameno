@@ -58,7 +58,7 @@ class Forms extends React.Component {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "formRegister": "register", ...this.state.form })
+      body: encode({ "form-name": "contact", ...this.state.form })
     })
       .then(() => alert("Success!"))
       .catch(error => alert(error));
@@ -91,12 +91,12 @@ class Forms extends React.Component {
           </CardContauner>
           <Form 
             onSubmit={this.handleSubmit}
-            name="register"
+            name="contact"
             method="post"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
           >
-            <input type="hidden" name="formRegister" value="register" />
+            <input type="hidden" name="form-name" value="contact" />
             <Name>
               <SubTitle>Nombre del Emprendimiento</SubTitle>
               <Input 
