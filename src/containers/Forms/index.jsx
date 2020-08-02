@@ -1,4 +1,5 @@
 import React from 'react'
+import { navigate } from 'gatsby-link'
 
 import { CardSmall,HeroCat } from '../../components'
 import {
@@ -58,9 +59,12 @@ class Forms extends React.Component {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": form.getAttribute('name'), ...this.state.form })
+      body: encode({ "form-name": this.form.getAttribute('name'), ...this.state.form })
     })
-      .then(() => alert("Success!"))
+      .then(() => {
+        navigate(this.form.getAttribute('action'))
+        alert("Success!")
+      })
       .catch(error => alert(error));
 
     e.preventDefault();
@@ -91,6 +95,7 @@ class Forms extends React.Component {
           </CardContauner>
           <Form 
             onSubmit={this.handleSubmit}
+            action="/"
             name="registro"
             method="post"
             data-netlify="true"
