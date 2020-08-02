@@ -91,12 +91,12 @@ class Forms extends React.Component {
           </CardContauner>
           <Form 
             onSubmit={this.handleSubmit}
-            name="register"
+            name="contact"
             method="post"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
           >
-            <input type="hidden" name="form-name" value="register" />
+            <input type="hidden" name="form-name" value="contact" />
             <Name>
               <SubTitle>Nombre del Emprendimiento</SubTitle>
               <Input 
