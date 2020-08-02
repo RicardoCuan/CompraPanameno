@@ -104,7 +104,7 @@ class Forms extends React.Component {
                 name="title"
                 type="text"
                 onChange={this.handleChange}
-                value={this.state.title}
+                value={this.state.form.title}
               />
             </Name>
             
@@ -114,7 +114,7 @@ class Forms extends React.Component {
                 name="province" 
                 placeholder="provincia"
                 onChange={this.handleChange}
-                value={this.state.province}
+                value={this.state.form.province}
               >
                 <option value="Panamá">Panamá</option>
                 <option value="Panamá Oeste">Panamá Oeste</option>
@@ -139,7 +139,7 @@ class Forms extends React.Component {
                 maxlength="200"
                 placeholder="Vendemos Sombreros Pintados en la provincia de Veraguas"
                 onChange={this.handleChange}
-                value={this.state.desc}
+                value={this.state.form.desc}
               ></TextArea> 
             </Description>
             
@@ -150,7 +150,7 @@ class Forms extends React.Component {
                 placeholder="61234567" 
                 type="text" 
                 onChange={this.handleChange}
-                value={this.state.whatsapp}
+                value={this.state.form.whatsapp}
               />
             </Whatsapp>
             
@@ -161,7 +161,7 @@ class Forms extends React.Component {
                 placeholder="SombreroPintao"
                 type="text"
                 onChange={this.handleChange}
-                value={this.state.instagram}
+                value={this.state.form.instagram}
               />
             </Instagram>
 
@@ -172,7 +172,7 @@ class Forms extends React.Component {
                 placeholder="SombreroPintao"
                 type="text" 
                 onChange={this.handleChange}
-                value={this.state.facebook}
+                value={this.state.form.facebook}
               />
             </Facebook>
 
@@ -183,11 +183,11 @@ class Forms extends React.Component {
                 placeholder="sombreropintao.com"
                 type="text"
                 onChange={this.handleChange}
-                value={this.state.website}
+                value={this.state.form.website}
               />
             </Web>
 
-            <Button>¡Registrar!</Button>
+            <Button type="submit">¡Registrar!</Button>
           </Form>
         </Container>
       </Wrap>
