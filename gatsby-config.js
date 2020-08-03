@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Compra Panameño 🇵🇦`,
-    description: `En momentos difíciles tenemos `,
+    description: `Directorio virtual: Descubre y apoya los emprendimientos panameños ¡Compra Panameño!`,
     author: `@RicardoCuan`,
   },
   plugins: [
@@ -21,10 +21,10 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#0239A3`,
+        theme_color: `#0239A3`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/icon-cp.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-transformer-json`,
